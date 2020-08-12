@@ -1,0 +1,363 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>数据分析思维与实战23讲                                                  11 | 流量分析：如何分析数据的波动？</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="5irko9v2drt83uc9r7inapahsh">数据分析思维与实战23讲                                                  11 | 流量分析：如何分析数据的波动？</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2                                                  11   %E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B3%A2%E5%8A%A8%EF%BC%9F_files/images/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2                                                  11   %E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B3%A2%E5%8A%A8%EF%BC%9F.jpg"></div>
+<h2 class="topic">
+<a name="4rvi2immo004rmindgpl34dpf3">背景</a>
+</h2>
+<h3 class="topic">
+<a name="2rne6k42e7ldanurlq1pf3115e">&nbsp;流量分析是什么？</a>
+</h3>
+<h3 class="topic">
+<a name="3am27lhl9jm3lgrd5ul9tchdjb">&nbsp;&nbsp;当指标体系和报表建立之后，分析师和业务方最重要的事就是：每天看各种数据，而这个过程就是 流量分析！</a>
+</h3>
+<h3 class="topic">
+<a name="3h1qvkq9d5dct5181jhuvs6h65">&nbsp;流量分析的四个部分</a>
+</h3>
+<h3 class="topic">
+<a name="78qtpo2rpu92rvnekmk4c09q5n">&nbsp;&nbsp;1. 渠道分析&mdash;&mdash;从哪来</a>
+</h3>
+<h3 class="topic">
+<a name="6d4tbd97q18ftv6lh64v5hr3ko">&nbsp;&nbsp;2. 转化分析&mdash;&mdash;经过什么过程</a>
+</h3>
+<h3 class="topic">
+<a name="0qjillf7c4ksfoe2odu4h0e59q">&nbsp;&nbsp;3. 价值分析&mdash;&mdash;产生什么价值</a>
+</h3>
+<h3 class="topic">
+<a name="02s3icqlojkpborc5s06vqc131">&nbsp;&nbsp;4. 波动分析&mdash;&mdash;日常的监控分析</a>
+</h3>
+<h2 class="topic">
+<a name="4kmg2cfhi6gilhb27ko7dcb5a0">渠道分析</a>
+</h2>
+<h3 class="topic">
+<a name="4ma08hir1q6autih1ge8r3bv0l">&nbsp;1. 常见渠道及渠道分类</a>
+</h3>
+<h3 class="topic">
+<a name="0e7ts8a5jo42i7she125qjll19">&nbsp;&nbsp;常见的渠道：</a>
+</h3>
+<h3 class="topic">
+<a name="5oh4loog1c0rel8o7l5bccnhkk">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="300" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2                                                  11   %E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B3%A2%E5%8A%A8%EF%BC%9F_files/73k23i0shgo2a3c5ushd2tu4fg.png" width="487"></p>
+<h3 class="topic">
+<a name="7kldd2fq8dpdihe4bh7n89e0tm">&nbsp;&nbsp;渠道的分类：（所有的分析都是先分析一级渠道，然后再二级渠道，以此类推。质量的好坏都是相对大盘来说的）</a>
+</h3>
+<h3 class="topic">
+<a name="014qoldvr2ddg4o81t4lpv09dh">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="289" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2                                                  11   %E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B3%A2%E5%8A%A8%EF%BC%9F_files/4346k07kbev0bm03tpj9b6lhg6.png" width="487"></p>
+<h3 class="topic">
+<a name="2aidpi689jq5l2bpqfnl8dmkuj">&nbsp;&nbsp;&nbsp;&nbsp;1. 量级少，但是质量比较高（即左图的数字1那里）。对于这种渠道，需要扩量，需在扩量的基础上仔细观察数据。</a>
+</h3>
+<h3 class="topic">
+<a name="0htl2ad8g0r6gr9073usorlisl">&nbsp;&nbsp;&nbsp;&nbsp;2. 量级多，同时质量也高（即左图数字2那里）。代表渠道非常好，这部分渠道需加快变现能力。</a>
+</h3>
+<h3 class="topic">
+<a name="50e6jmib0gk2406jse4ro70idb">&nbsp;&nbsp;&nbsp;&nbsp;3. 量级多，质量不太好（即左图数字3那里）。说明用户不匹配，交互有问题，这部分渠道需要拆解，精细化运营。</a>
+</h3>
+<h3 class="topic">
+<a name="5icfpkhk63ac4b23qrb9ktjikp">&nbsp;&nbsp;&nbsp;&nbsp;4. 量级少，质量也差（即左图数字4那里），这部分渠道直接放弃即可。</a>
+</h3>
+<h3 class="topic">
+<a name="7pkifih0j3ta7muekpnvvfubh5">&nbsp;2. 渠道推广的整个过程</a>
+</h3>
+<h3 class="topic">
+<a name="40grdv4j4orce2ko2ug90uoam8">&nbsp;&nbsp;这里以&ldquo;百度搜索&rdquo;为例</a>
+</h3>
+<h3 class="topic">
+<a name="1tcas3n6hmugqhgme2plkisd2h">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="277" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2                                                  11   %E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B3%A2%E5%8A%A8%EF%BC%9F_files/5b0l4mml5780b49dn84ua90r44.png" width="605"></p>
+<h3 class="topic">
+<a name="4tmlsudhtju70714s69c5e95hh">&nbsp;&nbsp;&nbsp;&nbsp;1. 外部渠道：百度搜索引擎（&ldquo;京东到家&rdquo;）会出现广告位</a>
+</h3>
+<h3 class="topic">
+<a name="5rq78kika5djha6ivq79lh1qj0">&nbsp;&nbsp;&nbsp;&nbsp;2. 文案展示：&ldquo;15元优惠券 新用户专享&rdquo;的文案提示和一个方框？（输入手机号？）</a>
+</h3>
+<h3 class="topic">
+<a name="2kgrdegkoimck5p2clk30iic34">&nbsp;&nbsp;&nbsp;&nbsp;3. 落地页： 手机号输入后就会领取优惠券并出现不同系统的下载提示界面</a>
+</h3>
+<h3 class="topic">
+<a name="2b5ftre524fbqa3g1lg4567k61">&nbsp;&nbsp;&nbsp;&nbsp;4. 下载：选择相应系统后跳转下载页</a>
+</h3>
+<h3 class="topic">
+<a name="2f3p45jpgm6nilddh1unpi89sc">&nbsp;&nbsp;&nbsp;&nbsp;5. 打开： 下载完后就可打开&ldquo;京东到家&rdquo;App</a>
+</h3>
+<h3 class="topic">
+<a name="2ehgk6d1moj9rd5a37ubj4p0n4">&nbsp;&nbsp;&nbsp;&nbsp;6. 浏览：在App中可以浏览或注册</a>
+</h3>
+<h3 class="topic">
+<a name="1bro56bi78283avrcsed3dhsvp">&nbsp;&nbsp;&nbsp;&nbsp;7. 。。。</a>
+</h3>
+<h3 class="topic">
+<a name="5dnij6ist09mdu264pqbsnv39e">&nbsp;&nbsp;&nbsp;&nbsp;8. 退出</a>
+</h3>
+<h3 class="topic">
+<a name="5rrv354qa29ahgi0ek8kj0hf65">&nbsp;3. 渠道的关键指标及分析方法</a>
+</h3>
+<h3 class="topic">
+<a name="663i2922qrd2v0mddfs4vkh89c">&nbsp;&nbsp;渠道的关键指标</a>
+</h3>
+<h3 class="topic">
+<a name="78nsrv2ohh1jva43vum0t4hvgj">&nbsp;&nbsp;&nbsp;前期： 看有效用户数和次留</a>
+</h3>
+<h3 class="topic">
+<a name="255i0bekr9ddvfc414985o74mb">&nbsp;&nbsp;&nbsp;中期：看次日、7 日、30 日留存</a>
+</h3>
+<h3 class="topic">
+<a name="6oaogttrsepd28nlv8hdnkascm">&nbsp;&nbsp;&nbsp;&nbsp;注意：</a>
+</h3>
+<h3 class="topic">
+<a name="2et8ln84cagbic2ln957jg8ao9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;除了看渠道的量级，还要看&ldquo;主动行为的用户数&rdquo;</a>
+</h3>
+<h3 class="topic">
+<a name="3pckejb1eske7t1g4o26nje1un">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一定要计算每个渠道的ROI，砍掉ROI小于1的渠道</a>
+</h3>
+<h3 class="topic">
+<a name="3nu1e7rsbbviq5lkcj5lc7e57n">&nbsp;&nbsp;&nbsp;后期： 看ROI</a>
+</h3>
+<h3 class="topic">
+<a name="4ce1qob6qgu40n7k0eaj98423l">&nbsp;&nbsp;分析方法</a>
+</h3>
+<h3 class="topic">
+<a name="12geickj5l97d50fhqma87nkg5">&nbsp;&nbsp;&nbsp;结构分析</a>
+</h3>
+<h3 class="topic">
+<a name="2ivl0m4fc20jb1q1c9a72guodk">&nbsp;&nbsp;&nbsp;&nbsp;先按照一级渠道来拆解，再按照二级渠道来拆解</a>
+</h3>
+<h3 class="topic">
+<a name="3t81b1qi054nutktpqae0pjv8i">&nbsp;&nbsp;&nbsp;趋势分析</a>
+</h3>
+<h3 class="topic">
+<a name="213ibmd7nkjjouver4tkukts0g">&nbsp;&nbsp;&nbsp;&nbsp;需看每个渠道的变化趋势，包括量级和留存</a>
+</h3>
+<h3 class="topic">
+<a name="517r9d8j0ona9b5grr4cl3o5n4">&nbsp;&nbsp;&nbsp;对比分析</a>
+</h3>
+<h3 class="topic">
+<a name="2brs28pi5h2ov39a8boq768g69">&nbsp;&nbsp;&nbsp;&nbsp;不同渠道间的趋势对比</a>
+</h3>
+<h3 class="topic">
+<a name="09sucrgls0e8btip21p3371onb">&nbsp;&nbsp;&nbsp;作弊分析</a>
+</h3>
+<h3 class="topic">
+<a name="3tj8f87cp7tm9inm9fqu7372cm">&nbsp;&nbsp;&nbsp;&nbsp;用Python来进行用户行为分析和机器学习</a>
+</h3>
+<h2 class="topic">
+<a name="0dni54rpus5l2ukhppj5v7ko9o">转化与价值分析</a>
+</h2>
+<h3 class="topic">
+<a name="0rb6acmvjtbr1mf17ie7bv76p9">&nbsp;漏斗分析</a>
+</h3>
+<h3 class="topic">
+<a name="0s20bj9qgjuidl1hjlhd5elp66">&nbsp;&nbsp;&ldquo;京东电商App&rdquo;为例</a>
+</h3>
+<h3 class="topic">
+<a name="0e41kl5u9u16cp3e1n81t6dg0f">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="283" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2                                                  11   %E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B3%A2%E5%8A%A8%EF%BC%9F_files/59k2gdtnsldavq38ru7q4iofo8.png" width="425"></p>
+<h3 class="topic">
+<a name="017qe2apjqposjsvaji8iq25li">&nbsp;&nbsp;&nbsp;&nbsp;要提升某一步的转化率（比如主界面UV到店铺UV这一步，从50%提升到60%），核心思想都是按照用户基础属性和行为属性来细分（这里是以手机这一块为例）</a>
+</h3>
+<h3 class="topic">
+<a name="3rpc4k0cen7hr087q38iroke58">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基础属性</a>
+</h3>
+<h3 class="topic">
+<a name="0o5sbpnbmd99jh2adikb5gigs3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机品牌</a>
+</h3>
+<h3 class="topic">
+<a name="6k09la3260v11ck0rkfplaoopv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;华为手机和苹果手机等各自品牌的转化率是多少？</a>
+</h3>
+<h3 class="topic">
+<a name="36vpj9706c8gpdv5b0f87kl6vp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地域</a>
+</h3>
+<h3 class="topic">
+<a name="6f23tf3qp93kpi67606o4q72cv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;华北、华南、华东等地域的转化率是多少？</a>
+</h3>
+<h3 class="topic">
+<a name="3e2odpu4i6hguqqfkj0pdeh3rb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imei特征</a>
+</h3>
+<h3 class="topic">
+<a name="5odi3sjs6et9dfklgvc6gcl1in">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;各种类型的手机转化率是多少？</a>
+</h3>
+<h3 class="topic">
+<a name="17507uc67451vg069luad6ub5t">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行为属性</a>
+</h3>
+<h3 class="topic">
+<a name="3h6mlpdlnhvq188e8g8flbmfaq">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入口</a>
+</h3>
+<h3 class="topic">
+<a name="4i8tpeqvqijpece7rjmvjfvavv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户通过桌面图标？还是弹窗？还是外链进入页面的？</a>
+</h3>
+<h3 class="topic">
+<a name="2h6u7q8qkhk1d8ale0tqors37c">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时段</a>
+</h3>
+<h3 class="topic">
+<a name="75nulkvsluc6h23gumatc58lip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;早、中、晚各自的用户量级</a>
+</h3>
+<h3 class="topic">
+<a name="7oras05ohsgpngpu68gcn4un2o">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户活跃度</a>
+</h3>
+<h3 class="topic">
+<a name="789mahtlpjmjfbu42v8t2g0idp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活跃用户有什么特征，如何区分活跃与不活跃用户？不活跃老用户被激活后活跃度观察</a>
+</h3>
+<h3 class="topic">
+<a name="5qt48789o6bd7ciubbofmo4q7d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户标签</a>
+</h3>
+<h3 class="topic">
+<a name="2ear7jbvkcoi52ek2079tjg7g4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户的年龄？性别？高档手机用户？中低档手机用户等</a>
+</h3>
+<h3 class="topic">
+<a name="6krinklik339ftfsl9cl5rpjvh">&nbsp;功能模块分析（常规分析、价值分析）</a>
+</h3>
+<h3 class="topic">
+<a name="3n3gmnofq2de96k1bca8k20qnd">&nbsp;&nbsp;功能模块的常规分析</a>
+</h3>
+<h3 class="topic">
+<a name="26d8lfqngslb5kb36mhtle4pe9">&nbsp;&nbsp;&nbsp;1. 功能渗透率=功能用户数/大盘用户数（使用某功能用户在大盘的占比）</a>
+</h3>
+<h3 class="topic">
+<a name="2qdtr5d96l6ogq7dtkqmpiff6g">&nbsp;&nbsp;&nbsp;2. 功能的功能留存率：第一天使用该功能同时第二天也使用该功能的用户数/第一天使用该功能的用户数</a>
+</h3>
+<h3 class="topic">
+<a name="6nlv5f0bb6rcb64msr2f2n3ktj">&nbsp;&nbsp;&nbsp;3. 功能大盘（大盘留存是指第二天只要打开 App 就可以）留存率：第一天使用该功能同时第二天是大盘用户的用户数/第一天使用该功能用户数</a>
+</h3>
+<h3 class="topic">
+<a name="244mpbrs0p5n1d9gvlen2tfvoj">&nbsp;&nbsp;&nbsp;4. 大盘用户： 所有功能用户排重加上不使用任何功能用户（逛一逛的用户）</a>
+</h3>
+<h3 class="topic">
+<a name="60is4s56tqgajehh65gk9lohdu">&nbsp;&nbsp;功能模块的价值分析</a>
+</h3>
+<h3 class="topic">
+<a name="3vucek31jna0cndhutf4u4s2l2">&nbsp;&nbsp;&nbsp;1. 功能核心用户数：一般用使用次数、使用时长、使用天数等具备某种行为来定义&ldquo;核心&rdquo;</a>
+</h3>
+<h3 class="topic">
+<a name="022u0mg3o6fef40sghd3ab5h3i">&nbsp;&nbsp;&nbsp;2. 功能对大盘贡献度，比如对大盘留存提升的贡献</a>
+</h3>
+<h3 class="topic">
+<a name="1mkreqcnj6v7dgoied3ko9c4qs">&nbsp;&nbsp;&nbsp;&nbsp;功能 A 对大盘留存的提升贡献=功能A渗透率*功能A的大盘留存率提升数</a>
+</h3>
+<h3 class="topic">
+<a name="1jijb6or38bdmpt7epns91smur">&nbsp;&nbsp;&nbsp;3. 功能带来的收入对比：每个功能每个月赚多少钱</a>
+</h3>
+<h3 class="topic">
+<a name="40plscjjrkuuhtpi5h0h9ov6e8">&nbsp;&nbsp;&nbsp;示例一：功能核心用户数案例</a>
+</h3>
+<h3 class="topic">
+<a name="0iurddti5djbp93k8eemqqolsv">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="184" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2                                                  11   %E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B3%A2%E5%8A%A8%EF%BC%9F_files/2luhrqif6aqko197ul2jkburt5.png" width="669"></p>
+<h3 class="topic">
+<a name="6iktq9evbvic7u7d4soorda42f">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结论：虽然功能A的用户数一直在增长，但是核心用户数并没有增加，中间某段时间反而跌了！这才是真正需要关注的点。</a>
+</h3>
+<h3 class="topic">
+<a name="53febvq3hs5gpmb5n86g3eavnp">&nbsp;&nbsp;&nbsp;示例二：功能对大盘的贡献度</a>
+</h3>
+<h3 class="topic">
+<a name="3cogtq92b0bo9fblp8ttf136tm">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="151" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2                                                  11   %E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE%E7%9A%84%E6%B3%A2%E5%8A%A8%EF%BC%9F_files/4ch540bgt22qik3bacfekresqe.png" width="525"></p>
+<h3 class="topic">
+<a name="4e5knbubfvn0hdb2714et5k7fq">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结论：功能 B 当前要比功能 C 对大盘的贡献要多，所以这就是当我们去评估功能价值时用到的一些指标</a>
+</h3>
+<h2 class="topic">
+<a name="75l4ojiv6sninv58637o8aj8av">流量波动逻辑分析</a>
+</h2>
+<h3 class="topic">
+<a name="6oa61md325ekpa8rcho1di7olf">&nbsp;日活</a>
+</h3>
+<h3 class="topic">
+<a name="2vaumgqbri4sahhsu2bhb65d4j">&nbsp;&nbsp;外部影响</a>
+</h3>
+<h3 class="topic">
+<a name="6b5hqb7eqg9cfh6hejn5tv36ue">&nbsp;&nbsp;&nbsp;常识</a>
+</h3>
+<h3 class="topic">
+<a name="089au32ea8ffgrct0pb797ojl6">&nbsp;&nbsp;&nbsp;外部事件</a>
+</h3>
+<h3 class="topic">
+<a name="5ps9518l51nagqkendqn2n6cso">&nbsp;&nbsp;&nbsp;竞品策略</a>
+</h3>
+<h3 class="topic">
+<a name="3p53jboms35oa9duda1fr1qsc8">&nbsp;&nbsp;内部影响</a>
+</h3>
+<h3 class="topic">
+<a name="6op3gjtql2c8ppdlf62j5g590a">&nbsp;&nbsp;&nbsp;数据统计</a>
+</h3>
+<h3 class="topic">
+<a name="6kl8ovori2o17o1jn0rvctpq6g">&nbsp;&nbsp;&nbsp;&nbsp;数据有没有错误？</a>
+</h3>
+<h3 class="topic">
+<a name="0ohs1k0icuri4l89106a3flo3a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据的采集</a>
+</h3>
+<h3 class="topic">
+<a name="6focukjllfekjm4cjiufamugb6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;统计口径</a>
+</h3>
+<h3 class="topic">
+<a name="0sp35i734met4upqs0tgtk9ko7">&nbsp;&nbsp;&nbsp;用户基础属性</a>
+</h3>
+<h3 class="topic">
+<a name="21csle2p482bu2dntv64et21e2">&nbsp;&nbsp;&nbsp;&nbsp;用户从哪里来，通过什么方式进入&mdash;&mdash;渠道（新增用户变化）、入口（手机型号）、画像</a>
+</h3>
+<h3 class="topic">
+<a name="4thu61bf4ff5cl1prd2d78o5be">&nbsp;&nbsp;&nbsp;用户行为属性</a>
+</h3>
+<h3 class="topic">
+<a name="6k4g132vm36h00cr1nirb7ctl7">&nbsp;&nbsp;&nbsp;&nbsp;用户进来干了什么&mdash;&mdash;具体功能的变化，跟版本可能有关</a>
+</h3>
+<h3 class="topic">
+<a name="2f87uhv0atjh9tdgfcj7qj7c42">&nbsp;留存</a>
+</h3>
+<h3 class="topic">
+<a name="77j9ip6bqjgg317075fpjgodhf">&nbsp;&nbsp;新用户的留存</a>
+</h3>
+<h3 class="topic">
+<a name="6svoofepqkeprehnv29bk6398b">&nbsp;&nbsp;&nbsp;与渠道、渠道过程有关</a>
+</h3>
+<h3 class="topic">
+<a name="0b35pi58qka95quu6go3slcub1">&nbsp;&nbsp;老用户的留存</a>
+</h3>
+<h3 class="topic">
+<a name="30v92kon821hp87rf3sjiatqjo">&nbsp;&nbsp;&nbsp;核心功能用户留存</a>
+</h3>
+<h3 class="topic">
+<a name="7bi31rke3nm1pbjf6j28me4eqd">&nbsp;&nbsp;&nbsp;&nbsp;核心功能用户的留存 = 功能A的留存 + 功能B的留存 + 功能C的留存</a>
+</h3>
+<h3 class="topic">
+<a name="6pc3v3ehgcg0bskct5nmjmm8j0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;假如留存下跌，这里有两种情况：</a>
+</h3>
+<h3 class="topic">
+<a name="026moigc8ter7iut3ll81rtm22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. A、B、C 中有 1 个留存下跌，这种情况最好解释，直接解释由于谁下跌即可</a>
+</h3>
+<h3 class="topic">
+<a name="1bapjic1b9o9m38upgl1m2i62s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. A、B、C 中有两个以上留存下跌，这要看其中谁是主要下跌因子，找到它</a>
+</h3>
+<h3 class="topic">
+<a name="73jv311a6ljtrg8bhfhq4bpav1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果两者下跌幅度差不多，还要进一步观察</a>
+</h3>
+<h3 class="topic">
+<a name="1c1ahf8jjcajkle910d64pke3b">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果持续下跌发生，必然是产品某核心部分出问题，围绕指标体系做一次产品全盘分析，找到它</a>
+</h3>
+<h3 class="topic">
+<a name="0lv5f4p4me6eos7qia2htvsiij">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果跌了几天之后回去了，可能跟外部影响因素有关，暂时不管</a>
+</h3>
+<h3 class="topic">
+<a name="0dlmh60ineb2q4mvehue38qt7v">&nbsp;&nbsp;&nbsp;非核心非功能用户留存</a>
+</h3>
+</body>
+</html>
