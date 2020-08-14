@@ -1,0 +1,255 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>数据分析思维与实战23讲               12 | 路径分析：用户的使用路径网络分析          </title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="6mgdsrolu67t0lvsb5n92ot1ov">数据分析思维与实战23讲               12 | 路径分析：用户的使用路径网络分析          </a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/images/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          .jpg"></div>
+<h2 class="topic">
+<a name="4mqb99pv3tmgn100v6n0h62air">路径分析定义</a>
+</h2>
+<h3 class="topic">
+<a name="5slaftee78gbipajvh1o9acno9">&nbsp;什么是路径分析？</a>
+</h3>
+<h3 class="topic">
+<a name="3iq27jhavoqrf17fhbhsppccep">&nbsp;&nbsp;路径分析是基于数据本身发现的，产品可能不太清楚，但是符合用户习惯的路径</a>
+</h3>
+<h3 class="topic">
+<a name="66sk9dsgtk5kfnhalgmop0sel7">&nbsp;路径分析与漏斗分析的区别</a>
+</h3>
+<h3 class="topic">
+<a name="4lplak5tc754cft4srdocbfa8o">&nbsp;&nbsp;漏斗分析</a>
+</h3>
+<h3 class="topic">
+<a name="70cr8hlg120k7jfdogb7p7hiv2">&nbsp;&nbsp;&nbsp;人为设定一条或者若干条漏斗</a>
+</h3>
+<h3 class="topic">
+<a name="47b7obkf1seae8ioaq7ulaqssf">&nbsp;&nbsp;&nbsp;先有假设再数据验证</a>
+</h3>
+<h3 class="topic">
+<a name="5hk3n0j8c78at1fe3kluns0kj5">&nbsp;&nbsp;路径分析</a>
+</h3>
+<h3 class="topic">
+<a name="5ml95cr8uut4c31ac0u5kk4oc3">&nbsp;&nbsp;&nbsp;先有数据再验证假设                           </a>
+</h3>
+<h3 class="topic">
+<a name="7b3suursmijeehjgcbka9oac75">&nbsp;&nbsp;&nbsp;基于用户的所有行为，去挖掘出若干条重要的用户路径，通过优化界面交互让产品用起来更加流畅和符合用户习惯，产生更多价值</a>
+</h3>
+<h2 class="topic">
+<a name="5q4b8qfvvglpcijib5rekv31su">路径分析案例&mdash;&mdash;以美团 APP 为例</a>
+</h2>
+<h3 class="topic">
+<a name="67hk8n547bo085i8emc5k1ggk5">&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="466" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/2clj6hbapletggs55a6maou19s.png" width="338"></p>
+<h3 class="topic">
+<a name="0dbjbajmu0avffare6gkiqpjqj">&nbsp;&nbsp;日志介绍</a>
+</h3>
+<h3 class="topic">
+<a name="70ir7legdo9a0qvf45gpf16hi6">&nbsp;&nbsp;&nbsp;首先，什么是日志？</a>
+</h3>
+<h3 class="topic">
+<a name="00artvi5enqb0oq2pvtvo78lhr">&nbsp;&nbsp;&nbsp;&nbsp;就是以表或文件形式存储，记录用户最详细的行为信息</a>
+</h3>
+<h3 class="topic">
+<a name="3d5r05gct8lrfno07bfu87crpv">&nbsp;&nbsp;&nbsp;日志的格式是怎样的？（看右图是手机的日志）                                                                          这里是 Key-Value 格式</a>
+</h3>
+<h3 class="topic">
+<a name="0uli54qbalujisqqc65j26n4i2">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="348" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/0t2k7ftd429echkdvn03l5cn82.png" width="587"></p>
+<h3 class="topic">
+<a name="263li1llk463g9fp8nmj9gqo70">&nbsp;&nbsp;&nbsp;日志里面含有哪些字段？</a>
+</h3>
+<h3 class="topic">
+<a name="3tpenm23i5ne77l462n8fkegha">&nbsp;&nbsp;&nbsp;&nbsp;字段有：用户的设备号 imei、IP、内存、分辨率、机型、系统，event 和 active 事件、版本、子版本、操作时间 Unix time</a>
+</h3>
+<h3 class="topic">
+<a name="62fr739a6dc1ioar4qec2ajhps">&nbsp;&nbsp;日志分析的步骤</a>
+</h3>
+<h3 class="topic">
+<a name="5ehv1sm0bbuqhfqgbfdei8h418">&nbsp;&nbsp;&nbsp;筛选</a>
+</h3>
+<h3 class="topic">
+<a name="1ji289sq2dmsj4qprn8n8jd02o">&nbsp;&nbsp;&nbsp;&nbsp;即对所有功能用户的量级进行查看，筛选出重要功能，找到切入点</a>
+</h3>
+<h3 class="topic">
+<a name="2o6tujdatq2qnti7f15fa86n9k">&nbsp;&nbsp;&nbsp;日志关联（抽样）</a>
+</h3>
+<h3 class="topic">
+<a name="7t7m0qn9f7voslb0ahv5bpef23">&nbsp;&nbsp;&nbsp;&nbsp;对筛选出的功能进行时间序列的排序，然后进行抽样关联（即日志与日志之间的功能数据的匹配，比如用了A功能后有多少用户又用了B功能？），一般是10万、20万数据就可以</a>
+</h3>
+<h3 class="topic">
+<a name="7agpvkdu80ho7uspnb4t6louij">&nbsp;&nbsp;&nbsp;标准化及画图</a>
+</h3>
+<h3 class="topic">
+<a name="4nlck9ni0e4l98fb3hk0636d5f">&nbsp;&nbsp;&nbsp;&nbsp;数据的标准化以及路径画图</a>
+</h3>
+<h3 class="topic">
+<a name="5eh112ehesak96iaskm5d60b1g">&nbsp;&nbsp;&nbsp;启发</a>
+</h3>
+<h3 class="topic">
+<a name="1vtj619fd5ajh53pbg29qobs8f">&nbsp;&nbsp;&nbsp;&nbsp;除开现有路径，找启发性路径</a>
+</h3>
+<h3 class="topic">
+<a name="6pv73o0cfsq8ep5j4lt48rob0o">&nbsp;&nbsp;这里还是以美团 APP为例，进行日志分析步骤详解。假设它的主要功能、功能渗透率的数据如右图</a>
+</h3>
+<h3 class="topic">
+<a name="3fp0hrf3d1bf7pkdl3qditqs7u">&nbsp;&nbsp;&nbsp;1.筛选</a>
+</h3>
+<p class="topicImage">
+<img height="333" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/32ana9ocaalfc2882q3nrl9cuk.png" width="450"></p>
+<h3 class="topic">
+<a name="6oumsf6lmhls4n388q8k7j8uou">&nbsp;&nbsp;&nbsp;&nbsp;筛选结论：</a>
+</h3>
+<h3 class="topic">
+<a name="5vjtkcminfkj0ers9bu48lcppv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. &ldquo;美食&rdquo;&ldquo;外卖&rdquo;&ldquo;搜索&rdquo;是三大主要功能：需要进一步看之后用户路径，这里就以美食为例</a>
+</h3>
+<h3 class="topic">
+<a name="5pcq0gn7l6suf1vkgdu861letp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. &ldquo;附近&rdquo;作为底部第二 button，存在什么问题？可以如何进一步优化？它的渗透率只有 18%，比订单还低</a>
+</h3>
+<h3 class="topic">
+<a name="1fj5ctah7svgr405ou8erhff2i">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. &ldquo;发现&rdquo;作为底部第三 button，用户感知度太弱，如何定位该功能价值？我们丝毫不怀疑可能产品想往内容这一块转，但是当前发现的渗透率只有 3%</a>
+</h3>
+<h3 class="topic">
+<a name="3eo51nt8dsdgrku05er08p9cnd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. &ldquo;订单&rdquo;功能作为底部第四 button，渗透率竟然有 20%，表现很好，用户进来后干什么？如何进一步优化？</a>
+</h3>
+<h3 class="topic">
+<a name="6561i2a8cfga050u2n47rfpobd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. &ldquo;我的&rdquo;作为底部第五 button，有 8% 的渗透率，我们比较好奇用户进去后干啥</a>
+</h3>
+<h3 class="topic">
+<a name="1gnqqo9rfo1dctmoao5ranfkoj">&nbsp;&nbsp;&nbsp;2. 数据进一步关联和标准化（这里选取&ldquo;美食&ldquo;、&rdquo;附近&ldquo;以及&rdquo;订单&ldquo;三个功能进行进一步关联）</a>
+</h3>
+<h3 class="topic">
+<a name="5n2tqasfba3u4pfsvohr1rrg7a">&nbsp;&nbsp;&nbsp;&nbsp;美食</a>
+</h3>
+<p class="topicImage">
+<img height="219" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/2e44h1eg2a4c8un3318oc40sel.png" width="473"></p>
+<h3 class="topic">
+<a name="27q57k71maqc8lj020s1kp6ftf">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美食的界面</a>
+</h3>
+<p class="topicImage">
+<img height="505" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/3nt76v3qgnifp3sdu6breotpuc.png" width="273"></p>
+<h3 class="topic">
+<a name="5iv6l39bcqb68p93jt40lu8j61">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关联数据的基础上进行标准化和画图，由原始数据表格，可以整理出4条路径以及各自的转化率</a>
+</h3>
+<h3 class="topic">
+<a name="1f094fi2i8hkg9vu26g9jm2eii">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="244" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/6q6hv6ec8sp9q6rc0erbh5nv7k.png" width="655"></p>
+<h3 class="topic">
+<a name="27l8d5139lvl3vcl97ludi7dce">&nbsp;&nbsp;&nbsp;&nbsp;附近</a>
+</h3>
+<h3 class="topic">
+<a name="5bhg1m0h4l4d46bl1gqudet5n7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;原始数据</a>
+</h3>
+<p class="topicImage">
+<img height="232" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/2qe1koji4e0t2chqdaa1efknle.png" width="454"></p>
+<h3 class="topic">
+<a name="13nejeqi9lkfkg6g87ro383sgv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附近的界面</a>
+</h3>
+<p class="topicImage">
+<img height="463" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/1aqstugrm5e88rvql9f07cui65.png" width="298"></p>
+<h3 class="topic">
+<a name="4l7r2naukmgp6hp508jm8fgcks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;整理出的路径图和各自转化率</a>
+</h3>
+<h3 class="topic">
+<a name="4odilcqli9a9j5jp6mt9fv9p6k">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="260" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/49slu32g6jbcfdu91q14fhgkf2.png" width="483"></p>
+<h3 class="topic">
+<a name="4f4p097vmavr15k8h0o7kuqlpn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从路径图和转化率来看，这里可以发现一个点：       享美食&rdquo;作为最大的曝光界面可能出现了比较大的问题</a>
+</h3>
+<h3 class="topic">
+<a name="2h4djs8kh9pqmj2u5sgl0d6jnb">&nbsp;&nbsp;&nbsp;&nbsp;订单</a>
+</h3>
+<h3 class="topic">
+<a name="2jedtl27mh8fkn24du88tmkft1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;原始数据</a>
+</h3>
+<p class="topicImage">
+<img height="102" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/6hbesfiaehr6an9va7erkcdmu6.png" width="454"></p>
+<h3 class="topic">
+<a name="3v1uavbumaso1ij7ike3ofsp0f">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单的界面</a>
+</h3>
+<p class="topicImage">
+<img height="434" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/50lru4gbpp23k27d7bfvqvj6l8.png" width="475"></p>
+<h3 class="topic">
+<a name="3tohumgajo666k7g2hajl3ttcu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里整理出的路径和转化率图</a>
+</h3>
+<p class="topicImage">
+<img height="81" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/0636r2rl1442urjdcq2mpqt2ug.png" width="450"></p>
+<h3 class="topic">
+<a name="5qu2019duare9g402appol6vu6">&nbsp;&nbsp;&nbsp;3. 基于前面数据的启发</a>
+</h3>
+<h3 class="topic">
+<a name="420don8r6d5kd00bovjn19m6ob">&nbsp;&nbsp;&nbsp;&nbsp;美食</a>
+</h3>
+<p class="topicImage">
+<img height="209" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/0a7rtloi66hp5qthmj15jrjeg5.png" width="561"></p>
+<h3 class="topic">
+<a name="29miqjqcogtvugbdcda5f6b3vi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. 把默认的 智能排序 改为 综合排序 可能更好；</a>
+</h3>
+<h3 class="topic">
+<a name="3kpc3llc1iro3f7n1e5jmm4phb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. 因第一条路径存在回退行为，可考虑在详情页增加 相关推荐；</a>
+</h3>
+<h3 class="topic">
+<a name="2i4t3tlerpkoes8la3s5492m8n">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. &rdquo;优惠团购&ldquo;路径居然还有83%用了搜索功能，说明当前界面的主动推荐不太准确，需要优化；</a>
+</h3>
+<h3 class="topic">
+<a name="09mfif9d6mih5stl9ljv4m7vpv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. &rdquo;外卖&ldquo;这一路径表明它的位置不好，可替换为其他；</a>
+</h3>
+<h3 class="topic">
+<a name="5vuf2lh1brj3vuon1p2cgo64k8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. &rdquo;秒杀&ldquo;也存在回退行为，建议在详情页 增加相关推荐。</a>
+</h3>
+<h3 class="topic">
+<a name="39aes7qnk0cdbf038e83ib3f6t">&nbsp;&nbsp;&nbsp;&nbsp;附近</a>
+</h3>
+<p class="topicImage">
+<img height="266" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/52gpgpmdll22rastk33lo6p8ls.png" width="495"></p>
+<h3 class="topic">
+<a name="0s96ofp4dnqguaodjoqruou2dd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. 40%的用户会回到 主页，说明没有很好的满足用户需求！</a>
+</h3>
+<h3 class="topic">
+<a name="63m29egq8d25h4ssfb7damn9m2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. 60%的用户使用了 搜索，最大曝光点（享美食）没人点，而用搜索，这个模块整体问题很大！</a>
+</h3>
+<h3 class="topic">
+<a name="24imk8gc081bd2fml0av6697k2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. 享美食、会生活、爱玩乐 三个功能的差异不大。</a>
+</h3>
+<h3 class="topic">
+<a name="4009lk9mhnbof4i59ofe20ql7e">&nbsp;&nbsp;&nbsp;&nbsp;订单</a>
+</h3>
+<p class="topicImage">
+<img height="72" src="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2               12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90          _files/0pdbkdanvlupss49866a8latd6.png" width="400"></p>
+<h3 class="topic">
+<a name="0aqot3tmc30egj8fq3qlg9lg7t">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. &ldquo;订单&rdquo;功能，90% 的用户查看订单后直接退出，可以考虑在订单详情页里面增加更多相关订单内容曝光</a>
+</h3>
+<h3 class="topic">
+<a name="178ouu25fplgv3r4t7vqu7f7jg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. 当前曝光内容是最近浏览曝光，效果不好，所以要增加用户消费场景</a>
+</h3>
+<h2 class="topic">
+<a name="02kh6dd9d78slu943ild7ri7j1">路径分析思考</a>
+</h2>
+<h3 class="topic">
+<a name="5me2vo6rrgt1vbb9a9tjsd8aej">&nbsp;1. 做逻辑分析的时候要进行维度的拆解！</a>
+</h3>
+<h3 class="topic">
+<a name="25pg673cjrv3fddh7luempi3n2">&nbsp;2. 对于没有连续路径的用户应该如何分析更好？</a>
+</h3>
+<h3 class="topic">
+<a name="4trk1oad73hdeu4mmo3gdqadec">&nbsp;3.  PC 端的路径分析和 APP 端的路径分析最大差异在哪？</a>
+</h3>
+<h2 class="topic">
+<a name="6vcfo0j0phk2r1qm9ds2bm69b7">一句话总结：路径分析本身就是啃日志</a>
+</h2>
+</body>
+</html>
