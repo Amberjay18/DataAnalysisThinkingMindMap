@@ -4,7 +4,7 @@
 ### 上传了两本推荐的电子书《大数据之路：阿里巴巴大数据实践》及《阿里巴巴大数据及AI实战》。
 ### 08.27 UPDATE
 ### Updated two ebooks of the Spring teacher recommended:"Alibaba Big Data Application" and "Alibaba Big Data and AI Practical Application”
-
+-----------------------------------------------------------分割线------------------------------------------------------------------------------
 ### Just using Mind Map to summary the "23 Courses of Data Analysis Thinking and Examples". There are four types of mind maps: HTML, PNG, JPG and the XML(Just the first and the second courses used the .drawio(the original website type))；
 ### Changed from ninth courses, there are three types of mind map: HTML, PNG and PDF,thank you.
 ### If there are not working, please pull an issue. Thank you so much. 
