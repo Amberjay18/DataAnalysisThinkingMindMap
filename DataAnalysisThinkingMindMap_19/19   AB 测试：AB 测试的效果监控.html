@@ -1,0 +1,215 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>数据分析思维与实战23讲&#13;
+19 | AB 测试：AB 测试的效果监控</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="2j0imt49o28hg6vgvg0fi6g5kg">数据分析思维与实战23讲&#13;
+19 | AB 测试：AB 测试的效果监控</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/images/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2 19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7.jpg"></div>
+<h2 class="topic">
+<a name="75jbgtbq5v4bk3b4cjok1tkbfl">1. A/B测试的介绍</a>
+</h2>
+<h3 class="topic">
+<a name="6t04j9ip0ihs0h3cua9cquof0b">&nbsp;1.1 . A/B测试的概念</a>
+</h3>
+<h3 class="topic">
+<a name="219rj3dfjqc1kp602pfjr0k7pq">&nbsp;&nbsp;百度百科定义</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/images/arrow_up.png"></p>
+<p class="topicImage">
+<img height="134" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/74978t2brvd8jdcg43hsiiia9d.png" width="653"></p>
+<h3 class="topic">
+<a name="24em5abe0ve4qk7spo7ou2lsev">&nbsp;&nbsp;&nbsp;1.1.1 关键词一：组成成分相同的访客</a>
+</h3>
+<h3 class="topic">
+<a name="2k7tepada2j7i969ctqtli3el1">&nbsp;&nbsp;&nbsp;&nbsp;这说明用户群一定要一样！</a>
+</h3>
+<h3 class="topic">
+<a name="0vu0rsihfpkuas894o3a1v1svu">&nbsp;&nbsp;&nbsp;1.1.2 关键词二：同一时间</a>
+</h3>
+<h3 class="topic">
+<a name="5db9cfgjifj2ocmslnbdrs61fc">&nbsp;&nbsp;&nbsp;&nbsp;说明A/B 测试对比的时候，一定是在同一个时间段进行对比</a>
+</h3>
+<h3 class="topic">
+<a name="7jmp1oib5h3bc8lvnd2d45nthp">&nbsp;&nbsp;&nbsp;1.1.3 关键词三： 用户体验数据和业务数据</a>
+</h3>
+<h3 class="topic">
+<a name="5q93fd9eu6ofbnq3op1q8atjlm">&nbsp;&nbsp;&nbsp;&nbsp;要提前搭建好 A/B 测试的整套指标体系</a>
+</h3>
+<h3 class="topic">
+<a name="7unfc5f79q03j2ur7mk7jo1p3p">&nbsp;&nbsp;A/B测试的整体流程</a>
+</h3>
+<h3 class="topic">
+<a name="3peaj7kelq2rnevsthfq48ob14">&nbsp;&nbsp;&nbsp;&middot; 根据数据分析得到某建议项</a>
+</h3>
+<h3 class="topic">
+<a name="7q0q9sq2sa53v9q7hq0pa67p2o">&nbsp;&nbsp;&nbsp;&middot; 要把建议项变成落地项一般要通过 A/B 测试</a>
+</h3>
+<h3 class="topic">
+<a name="7ge3att7r6sdrcp07p79i7lepv">&nbsp;&nbsp;&nbsp;&middot; 根据某落地项，研发和设计人员进行开发设计</a>
+</h3>
+<h3 class="topic">
+<a name="7357q6gtdhhr3bb9kg9i77b0hb">&nbsp;&nbsp;&nbsp;&middot; 研发人员数据采集</a>
+</h3>
+<h3 class="topic">
+<a name="61ju2tpmje4nfc4pmtgqbaf0n6">&nbsp;&nbsp;&nbsp;&middot; 分析师跟进 A/B 测试效果，当显著性在 95% 以上并且维持了一段时间，实验就可以结束</a>
+</h3>
+<h3 class="topic">
+<a name="7fe691qft3vdnpj7nqqfrb57tr">&nbsp;&nbsp;整体节奏要按照灰度（即先小版本/小部分用户测试，再放量按后面比例）、5%、10%、20%、50%、100% 来控制</a>
+</h3>
+<h3 class="topic">
+<a name="3amsd7sdtmli863hjb6vmbgd6l">&nbsp;&nbsp;目前 A/B 测试，业界都是一套 A/B 测试平台，大公司自己研发，小公司购买！</a>
+</h3>
+<h3 class="topic">
+<a name="0mqiunerb3pmmhlnh877hclmu5">&nbsp;1.2 常见的两种A/B测试类型</a>
+</h3>
+<h3 class="topic">
+<a name="5n6b2kdbp1v68lc3i3kns6476u">&nbsp;&nbsp;1.2.1. UI 界面型</a>
+</h3>
+<h3 class="topic">
+<a name="6at98mtug92ianhq944d1um9ve">&nbsp;&nbsp;&nbsp;比如&ldquo;墨迹天气&rdquo;里面这个小人</a>
+</h3>
+<p class="topicImage">
+<img height="462" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/06481n1icfs9lq0nurcb52io3m.png" width="253"></p>
+<h3 class="topic">
+<a name="5feeq9ft4saf2firuta8dpmpks">&nbsp;&nbsp;1.2.2 算法策略型</a>
+</h3>
+<h3 class="topic">
+<a name="1j4t3ouvq442iq6arbinabmuqo">&nbsp;&nbsp;&nbsp;比如&ldquo;小红书&rdquo;在用户兴趣预选后的首屏推荐</a>
+</h3>
+<p class="topicImage">
+<img height="486" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/01vk46qu1uhubc0kbkodpgn0vu.png" width="271"></p>
+<h3 class="topic">
+<a name="2t6lddodq8n0v6mp3l6gu31q70">&nbsp;1.3 实际工作中的问题</a>
+</h3>
+<h3 class="topic">
+<a name="3jm2m2bpu4crlef66sahgfalqh">&nbsp;&nbsp;违背&ldquo;同一时间&rdquo;原则，在新功能上线后数据变现好的情况下才做A/B测试！</a>
+</h3>
+<h3 class="topic">
+<a name="2bc29hl9u5gg3jsf7aquep47m4">&nbsp;&nbsp;解决办法：应在准备上线短视频功能时，就要开始做 A/B 测试，必须同一时间维度！</a>
+</h3>
+<h2 class="topic">
+<a name="72gkqdb8nh5m2cd0bnrs48tm79">2. A/B 测试注意事项</a>
+</h2>
+<h3 class="topic">
+<a name="0ud4v2b0rj8gbgvfbico7lkej4">&nbsp;2.1 A/B 两个组是否真的相同</a>
+</h3>
+<h3 class="topic">
+<a name="15i2kndgs1lv2jccf4l8ho9lr6">&nbsp;&nbsp;确保只存在一个变量</a>
+</h3>
+<h3 class="topic">
+<a name="0ngbbqqvdjfp97h5io5ma1714a">&nbsp;2.2 策略是否生效</a>
+</h3>
+<h3 class="topic">
+<a name="3d4ad9g88locbb4gg70i1ajlbl">&nbsp;&nbsp;一定要去对 A/B 组进行抽样查看</a>
+</h3>
+<h3 class="topic">
+<a name="2ds6ur8gql3dqiql3mf2inrhl7">&nbsp;2.3 A/B 测试评估指标体系</a>
+</h3>
+<h3 class="topic">
+<a name="4iti0gp1o46itv59bpok2ssbfn">&nbsp;&nbsp;比如这样的格式</a>
+</h3>
+<p class="topicImage">
+<img height="110" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/3guh2fc4b30uvia1j17j2ddch8.png" width="556"></p>
+<h3 class="topic">
+<a name="69dvpimifgkevnn12tru1n2msr">&nbsp;2.4 多观察几天数据</a>
+</h3>
+<h3 class="topic">
+<a name="5va4igvolicn9ujcq8k82cemkc">&nbsp;&nbsp;一般是 4~10 天，一周左右的时间即可</a>
+</h3>
+<p class="topicImage">
+<img height="301" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/490jkjc5rt5ms9rkphk08ffpgf.png" width="586"></p>
+<h3 class="topic">
+<a name="4ann1dadth260j24v0g6dtlpln">&nbsp;2.5 A/B 测试的存档规划</a>
+</h3>
+<h3 class="topic">
+<a name="4vfp2fup2an3d1sploh0ik9dpq">&nbsp;&nbsp;建议采用 5W1H 方法来管理A/B 测试文档化</a>
+</h3>
+<p class="topicImage">
+<img height="114" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/5ob0afd5hd8ae6t6j8qlh64ma6.png" width="567"></p>
+<h2 class="topic">
+<a name="59odtulpg6li1bb9l054e2iknd">3. A/B 测试案例</a>
+</h2>
+<h3 class="topic">
+<a name="223vq7e29n14s42opubdce976c">&nbsp;第一个是&ldquo;奈飞（Netflix）&rdquo;的海报案例</a>
+</h3>
+<h3 class="topic">
+<a name="4sm78pk6cl87dp08mv6is5j4cr">&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="250" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/5lmpnjf6o88fc05n8dgsfhpg2p.png" width="489"></p>
+<h3 class="topic">
+<a name="1valauff9v4g0cvorrjmdfbjdp">&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="218" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/5khjqevno5orq3kjot81uon0el.png" width="494"></p>
+<h3 class="topic">
+<a name="5ee0grel7uahk0d771dv6a1h14">&nbsp;&nbsp;&nbsp;在这些海报实验的基础之上，他们总结出以下论点：&#13;
+&#13;
+&middot; 出现面部表情，更容易引人入胜；&#13;
+&#13;
+&middot; 使用反派形象更容易点击；&#13;
+&#13;
+&middot; 海报人数不要超过 3 人；&#13;
+&#13;
+&middot; 同一个海报，在不同国家的偏好完全不一样。</a>
+</h3>
+<h3 class="topic">
+<a name="6na6baj9e9g4trv7nngctipd1r">&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="246" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/1vfb35ekhnjfl42cvavb64i2ic.png" width="492"></p>
+<h3 class="topic">
+<a name="00v63j4f008d3fdasg94qssu13">&nbsp;第二个是&ldquo;墨迹天气&rdquo;右上角的分享按钮图标</a>
+</h3>
+<h3 class="topic">
+<a name="7iosgble5tscaagov8r1u6upok">&nbsp;&nbsp;墨迹的分享按钮图标</a>
+</h3>
+<h3 class="topic">
+<a name="1vhudfdpuqu2epn2nomrnul9fv">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="479" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/3u5kbeiert570rlfn5dh28msjt.png" width="260"></p>
+<h3 class="topic">
+<a name="015l3s2enh0akh6staq00mro6c">&nbsp;&nbsp;&nbsp;&nbsp;结论：经A/B测试后发现确实墨迹这个分享图标样式效果更好！</a>
+</h3>
+<h3 class="topic">
+<a name="3anag730kvornobml92geiacva">&nbsp;&nbsp;大部分分享按钮是这样</a>
+</h3>
+<h3 class="topic">
+<a name="44u116636e5cmrgibqb3jqruvd">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="94" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/2fhl80pd5hukvkoh4vk8jrs76d.png" width="86"></p>
+<h3 class="topic">
+<a name="2sch12bu4jk8s59adqu61et6jb">&nbsp;第三个是&ldquo;滴滴&rdquo;用户中心有头像案例</a>
+</h3>
+<h3 class="topic">
+<a name="2r497tq00ho63gbcpv60h52vo3">&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="471" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/7i6l9k1ndh9gsalf99dualumas.png" width="265"></p>
+<h3 class="topic">
+<a name="6fu46pm5b7od6dm2f47nr64lsh">&nbsp;&nbsp;&nbsp;结论：经A/B测试，有小汽车头像的用户体验感更好！</a>
+</h3>
+<h3 class="topic">
+<a name="007h3fknt7n58errde1p5blen9">&nbsp;第四个是&ldquo;今日头条&rdquo;的广告位放第几位更好案例</a>
+</h3>
+<h3 class="topic">
+<a name="41bqt6fahmpdgaoal2r8lq7nvj">&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="474" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/0mpnhpioup48e4elpj3ql6gpnc.png" width="260"></p>
+<h3 class="topic">
+<a name="2ruj8d5trnmdqon612f9ohp1nb">&nbsp;&nbsp;&nbsp;结论：这里放第4位也是A/B测试后的结果！</a>
+</h3>
+</body>
+</html>
