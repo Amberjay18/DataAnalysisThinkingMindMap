@@ -1,0 +1,189 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>数据分析思维与实战23讲&#13;
+21 | 数仓：数据仓库的三种类型表</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="22mn5q09ttjnrvq12slschf7a0">数据分析思维与实战23讲&#13;
+21 | 数仓：数据仓库的三种类型表</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="21   %E6%95%B0%E4%BB%93%EF%BC%9A%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E7%9A%84%E4%B8%89%E7%A7%8D%E7%B1%BB%E5%9E%8B%E8%A1%A8_files/images/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%AE%9E%E6%88%9823%E8%AE%B2 21   %E6%95%B0%E4%BB%93%EF%BC%9A%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E7%9A%84%E4%B8%89%E7%A7%8D%E7%B1%BB%E5%9E%8B%E8%A1%A8.jpg"></div>
+<h2 class="topic">
+<a name="2boirrj84o7uq5hkdj50ghafm0">1. 数据研发工程师和数据分析师的关系</a>
+</h2>
+<h3 class="topic">
+<a name="5f9gu81s5bf85l9jikl2abhsaq">&nbsp;1.1 先看一下整个&ldquo;大数据体系&rdquo;</a>
+</h3>
+<h3 class="topic">
+<a name="1tjte9ifb9fbj5gf8v92v5katn">&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="237" src="21   %E6%95%B0%E4%BB%93%EF%BC%9A%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E7%9A%84%E4%B8%89%E7%A7%8D%E7%B1%BB%E5%9E%8B%E8%A1%A8_files/2ekrl2s5rk368d0hgrkt0j5hut.png" width="588"></p>
+<h3 class="topic">
+<a name="0p7ccvosrk8oe41a0q2p76c80u">&nbsp;1.2 数据研发工程师和数据分析师之间的关系</a>
+</h3>
+<h3 class="topic">
+<a name="5galhhsc9bmp212mq525clq55u">&nbsp;&nbsp;1.2.1 大公司：&#13;
+分工很明确，分析师有点&ldquo;风险性&rdquo;，研发工程师相对比较稳</a>
+</h3>
+<h3 class="topic">
+<a name="0adtrrv77cpreb6vj5n5q4knrv">&nbsp;&nbsp;1.2.2 小公司：&#13;
+全部是数据研发工程师，分析师的活也干了，所以看似什么都懂，但不会很专；即所谓的 BI 工程师</a>
+</h3>
+<h2 class="topic">
+<a name="7d959o4668va27esheklcvto7m">2. App 日志采集中的埋点</a>
+</h2>
+<h3 class="topic">
+<a name="63gqjp2ndlskqqd1t01fmf6hkc">&nbsp;2.1 在埋点前中期</a>
+</h3>
+<h3 class="topic">
+<a name="2grm367chptp1k4jjmsijh7d3d">&nbsp;&nbsp;2.1.1 一定要主动参与到研发的埋点讨论中，建立埋点规范</a>
+</h3>
+<h3 class="topic">
+<a name="6oes2092c4ugauqoocc820akvf">&nbsp;2.2 在埋点后期</a>
+</h3>
+<h3 class="topic">
+<a name="6ap2glk23btdfbjco1u67dvfa4">&nbsp;&nbsp;2.2.1 文档化</a>
+</h3>
+<h3 class="topic">
+<a name="6b65t55n6oomhhgtd78uah6m2r">&nbsp;&nbsp;2.2.2 定所有行为日志的公参</a>
+</h3>
+<h2 class="topic">
+<a name="28jm41h4a10jabmv27b0g25thh">3. 数据建模步骤及举例</a>
+</h2>
+<h3 class="topic">
+<a name="67p0jj7bi32t0temlg6vhb8cpd">&nbsp;3.1 为什么要建模？</a>
+</h3>
+<h3 class="topic">
+<a name="43a4n4jbfr1m4t0itkkvgd5c8p">&nbsp;&nbsp;3.1.1 日志量太大，跑数很慢</a>
+</h3>
+<h3 class="topic">
+<a name="1perjbghg3l3uj806qdtb3nsdf">&nbsp;&nbsp;3.1.2 日志太乱，很多重要的数拿不出来</a>
+</h3>
+<h3 class="topic">
+<a name="24kbfmnst0u6iukrptkndglffo">&nbsp;3.2 建模的好处/作用</a>
+</h3>
+<h3 class="topic">
+<a name="797t31c0v7e8vqvpvr9f26locd">&nbsp;&nbsp;3.2.1 提高整体计算效率，减少重复开发</a>
+</h3>
+<h3 class="topic">
+<a name="37jh940eur8dmam7lpvfdn82r4">&nbsp;&nbsp;3.2.2 历史数据追踪，中间表数据可以存储一年</a>
+</h3>
+<h3 class="topic">
+<a name="755iq9nv3d5pjvm8u7pdoen2c7">&nbsp;&nbsp;3.2.3 更好适应业务发展，修改影响范围较小</a>
+</h3>
+<h3 class="topic">
+<a name="55rlof9uhuv5b1ptltc6sei2mk">&nbsp;&nbsp;3.2.4 清晰数据结构，分析师更加容易理解</a>
+</h3>
+<h3 class="topic">
+<a name="1sdg69c0odedglp6jl6td3to66">&nbsp;3.3 数据建模主要步骤及举例</a>
+</h3>
+<h3 class="topic">
+<a name="31kf4n4gt7d7ut9rkto1aggd8c">&nbsp;&nbsp;3.3.1 数据建模的主要步骤</a>
+</h3>
+<p class="topicImage">
+<img height="129" src="21   %E6%95%B0%E4%BB%93%EF%BC%9A%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E7%9A%84%E4%B8%89%E7%A7%8D%E7%B1%BB%E5%9E%8B%E8%A1%A8_files/5f2e00ccjcj4o20qosbk906rof.png" width="548"></p>
+<h3 class="topic">
+<a name="7m6uncdq1t6cphogjdsc2euiah">&nbsp;&nbsp;&nbsp;&middot; 底层日志每天传输到 ODS 层</a>
+</h3>
+<h3 class="topic">
+<a name="3lcvse89r2jgkk5jn978qaokkj">&nbsp;&nbsp;&nbsp;&nbsp;&middot; ODS（Operational Data Store) 操作性数据：是作为数据库到数据仓库的一种过渡</a>
+</h3>
+<h3 class="topic">
+<a name="7gu17kah4ugtduq9gvrlh0s19u">&nbsp;&nbsp;&nbsp;&middot; 再从ODS层传输到DWS层</a>
+</h3>
+<h3 class="topic">
+<a name="6mbkc9iaeag02n5m169dgjhmcn">&nbsp;&nbsp;&nbsp;&nbsp;&middot; DWS (Data Warehouse Store)数据仓库: 即如何聚合各种表，专业力体现</a>
+</h3>
+<h3 class="topic">
+<a name="1fe9fm7s2a4u9snack14kpa5ri">&nbsp;&nbsp;&nbsp;&middot; 最后从DWS层传输到DM层</a>
+</h3>
+<h3 class="topic">
+<a name="47i42pid6dtu1j6q7cjoa8tmn9">&nbsp;&nbsp;&nbsp;&nbsp;&middot; DMS(Data Mart Store) 数据集市：为特定应用目的/范围（即上层想看的维度和指标）独立出来的数据</a>
+</h3>
+<h3 class="topic">
+<a name="4mod0lelkct8pffusss5ssade9">&nbsp;&nbsp;3.3.2 数据建模举例 ----- 头条</a>
+</h3>
+<h3 class="topic">
+<a name="6po5vp100iub6ibggrmdag0ose">&nbsp;&nbsp;&nbsp;&middot; 第一步：ODS</a>
+</h3>
+<h3 class="topic">
+<a name="2tpac0vprkmvqo6jffl4jod8fk">&nbsp;&nbsp;&nbsp;&nbsp;&middot; 用户基础属性表：imei, prov, city, machine</a>
+</h3>
+<h3 class="topic">
+<a name="6t9d38qjsgjvgc7gngtsd1nkb6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;维度表</a>
+</h3>
+<h3 class="topic">
+<a name="0fns58ll09j63v8gua99kvhfuo">&nbsp;&nbsp;&nbsp;&nbsp;&middot; 用户文章下发表：imei, article_id, xiafa_time</a>
+</h3>
+<h3 class="topic">
+<a name="1q86v9bpgn9d43k7pcvbv6ddah">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ODS类型</a>
+</h3>
+<h3 class="topic">
+<a name="0coiopl52nf5ns3d4pt1eu0e2v">&nbsp;&nbsp;&nbsp;&nbsp;&middot; 用户文章点击表：imei, article_id, dianji_time</a>
+</h3>
+<h3 class="topic">
+<a name="59soqas3hif6sushqasj0djbps">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ODS类型</a>
+</h3>
+<h3 class="topic">
+<a name="07phrj0p4mb4stebt9ui19qql9">&nbsp;&nbsp;&nbsp;&nbsp;&middot; 文章属性表：article_id, category_id, title</a>
+</h3>
+<h3 class="topic">
+<a name="3oga1pn4ob4ptfa6m4r70dcmlt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;维度表</a>
+</h3>
+<h3 class="topic">
+<a name="48q2c0jgiuna61gmldngub6d03">&nbsp;&nbsp;&nbsp;&middot; 第二步：DWS</a>
+</h3>
+<h3 class="topic">
+<a name="08ffn0vi3h5g89kpm3lm2rupaf">&nbsp;&nbsp;&nbsp;&nbsp;&middot; 用户文章基础属性表：&#13;
+imei, prov, city, machine, article_id, category_id, title, xiafa_pv, dianji_pv, xiafa_time, dianji_time</a>
+</h3>
+<h3 class="topic">
+<a name="3ab32jhsnd4nfte5peptae2mhk">&nbsp;&nbsp;&nbsp;&nbsp;&middot; 用户分类基础属性表：&#13;
+imei, prov, city, machine, category_id, xiafa_pv, dianji_pv</a>
+</h3>
+<h3 class="topic">
+<a name="2folcv00mvruotoevln4sh8g9o">&nbsp;&nbsp;&nbsp;&middot; 第三步：DM（业务应用表：即看业务需要什么数据，针对性聚合；比如右边这样）</a>
+</h3>
+<h3 class="topic">
+<a name="2u9qfr0ubq1qvlr1org9rco0kl">&nbsp;&nbsp;&nbsp;&nbsp;&middot; 省市下发点击 PV 数：prov, city,  xiafa_pv, dianji_pv</a>
+</h3>
+<h3 class="topic">
+<a name="2nkcm4i6cn5f3eo434kkli9vnq">&nbsp;&nbsp;&nbsp;&nbsp;&middot; 分类下发点击 PV 数：category_id, xiafa_pv, dianji_pv</a>
+</h3>
+<h3 class="topic">
+<a name="374u5kh94oe93mhionh2p3c3ko">&nbsp;&nbsp;3.3.3 注意事项</a>
+</h3>
+<h3 class="topic">
+<a name="2sb47l60lfv4kaf99vp3ucekqk">&nbsp;&nbsp;&nbsp;&middot; 不要过度相信研发的话</a>
+</h3>
+<h3 class="topic">
+<a name="1j9dke9lo1br7ki36p1qpt2veo">&nbsp;&nbsp;&nbsp;&middot; 不要去做研发做的事</a>
+</h3>
+<h3 class="topic">
+<a name="3a44uenpjqfbcjvobrjem6du7j">&nbsp;&nbsp;&nbsp;&middot; 不要去等研发开发表</a>
+</h3>
+<h3 class="topic">
+<a name="7u5i862h8cj4s7vbv7u4cit7i4">&nbsp;在大数据平台这件事上一定要让业务倒逼，先把最核心的数据快速弄出来</a>
+</h3>
+<h2 class="topic">
+<a name="3oft89u75qiqr5cgafohf1895k">4. 数据管理</a>
+</h2>
+<h3 class="topic">
+<a name="104gta0nr5hog521o7s2aa1hd7">&nbsp;4.1 计算管理：&#13;
+Join 的时候要注意数据倾斜，选择哪张表很关键，对 MR 内部原理的掌握也很重要</a>
+</h3>
+<h3 class="topic">
+<a name="4f3s6ksioq57s8d9q2mc1eee33">&nbsp;4.2 数据存储管理：&#13;
+核心的表尽量保存久一点（3 个月以上），非核心的表 1 个月内即可</a>
+</h3>
+<h3 class="topic">
+<a name="2430vi9rhotcvtjl83sbnjp4sa">&nbsp;4.3 权限管理：不要随便给其他人开权限，采用最小可满足原则给权限就行，同时给读权限</a>
+</h3>
+</body>
+</html>
