@@ -1,0 +1,135 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>12 | 路径分析：用户的使用路径网络分析</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="2m03pjpg9sue6tgjcnn7flvu6h">12 | 路径分析：用户的使用路径网络分析</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90_files/images/12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90.jpg"></div>
+<h2 class="topic">
+<a name="6l33tip4nl73f2etqdkbheu9mc">1. 路径分析的定义</a>
+</h2>
+<h3 class="topic">
+<a name="4ogkqa2sk1v822jet7tbugkllb">&nbsp;1.1. 定义：</a>
+</h3>
+<h3 class="topic">
+<a name="045vcrv3ek808fkjimmkgocprd">&nbsp;&nbsp;&middot; 基于用户的所有行为，去挖掘出若干条重要的用户路径，通过优化界面交互让产品用起来更加流畅和符合用户习惯，产生更多价值</a>
+</h3>
+<h3 class="topic">
+<a name="2e19ue8kehuloqlskfc0h9gjfq">&nbsp;1.2. 区别：</a>
+</h3>
+<h3 class="topic">
+<a name="60glknhh64oabimo2i54o2r2kg">&nbsp;&nbsp;漏斗分析：&#13;
+&middot; 人为设定一条或者若干条漏斗路径。&#13;
+&middot; 先有假设再数据验证。</a>
+</h3>
+<h3 class="topic">
+<a name="04c3321sicqbdrtmrk50sr5lqk">&nbsp;&nbsp;路径分析：&#13;
+&middot;  基于用户行为数据发现的路径。&#13;
+&middot;  先有数据再验证假设。跟漏斗分析刚好相反。</a>
+</h3>
+<h2 class="topic">
+<a name="45c8jh9pp3b2aaurvkt60eg4fa">2. 路径分析案例&mdash;&mdash;以美团 APP 为例</a>
+</h2>
+<h3 class="topic">
+<a name="4kru24vqncl909t3rsr1uhp7mk">&nbsp;(后面分析都以当前&ldquo;美团App&rdquo;界面为准）</a>
+</h3>
+<p class="topicImage">
+<img height="884" src="12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90_files/442ho0gqqu98q6jjlvclsulu58.png" width="641"></p>
+<h3 class="topic">
+<a name="578541ap29s79oin0q9u8lejdq">&nbsp;&nbsp;2.1. 日志</a>
+</h3>
+<h3 class="topic">
+<a name="49fuakdvb4alscsb0j1a48n122">&nbsp;&nbsp;&nbsp;&middot; 定义：</a>
+</h3>
+<h3 class="topic">
+<a name="7r0istm38t7dnp4un5rblaolip">&nbsp;&nbsp;&nbsp;&nbsp;以表或文件形式存储在端内，记录用户最详细的行为信息</a>
+</h3>
+<h3 class="topic">
+<a name="475ojv4elidpnrh2jtmipupkch">&nbsp;&nbsp;&nbsp;&middot; 如右图就是日志：&#13;
+&middot; 熟悉有哪些字段和格式即可。</a>
+</h3>
+<h3 class="topic">
+<a name="777uk1t70413bdnsp1vflcsff6">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="546" src="12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90_files/2i23c8lh8saieip4t1mssbc4ah.png" width="921"></p>
+<h3 class="topic">
+<a name="7k2hk1iuo8pap8lfb84ft7ehf2">&nbsp;&nbsp;2.2. 日志分析步骤</a>
+</h3>
+<h3 class="topic">
+<a name="3e7td763c73b2urbf08iccte12">&nbsp;&nbsp;&nbsp;&middot; 筛选</a>
+</h3>
+<h3 class="topic">
+<a name="1mdm9rbqubtd7t27kafhk85hj4">&nbsp;&nbsp;&nbsp;&nbsp;重要功能</a>
+</h3>
+<h3 class="topic">
+<a name="3v1gh7r90dpop2i834e0e0jtva">&nbsp;&nbsp;&nbsp;&middot; 日志关联（抽样）</a>
+</h3>
+<h3 class="topic">
+<a name="25429vqj88nrfumfma97hu6neo">&nbsp;&nbsp;&nbsp;&nbsp;按时序来排序；&#13;
+抽样关联日志</a>
+</h3>
+<h3 class="topic">
+<a name="43l3ped6digc1id1gomattqhii">&nbsp;&nbsp;&nbsp;&middot; 标准化及画图</a>
+</h3>
+<h3 class="topic">
+<a name="5tfo1ii1d59io06lcj9kljshgi">&nbsp;&nbsp;&nbsp;&middot; 启发</a>
+</h3>
+<h3 class="topic">
+<a name="6uubmhhf59dlh3kqn6i5pi5bl1">&nbsp;&nbsp;2.3. 案例（美团App里的&ldquo;美食&rdquo;模块路径分析）</a>
+</h3>
+<h3 class="topic">
+<a name="35vk88bi8adugqu6vq07dtikgq">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="874" src="12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90_files/2o80f2u9shcdhh19dl7ip2dp6s.png" width="472"></p>
+<h3 class="topic">
+<a name="4rhq2lt1srmqcktsf21msjpm5n">&nbsp;&nbsp;&nbsp;&nbsp;&ldquo;美食&rdquo;这块进来后用户的路径</a>
+</h3>
+<p class="topicImage">
+<img height="460" src="12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90_files/452h0sujqtvo54g1o1k70s37f6.png" width="998"></p>
+<h3 class="topic">
+<a name="5gunh1bpk90i0ci3c4aa8r8mna">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;路径转化图</a>
+</h3>
+<p class="topicImage">
+<img height="394" src="12   %E8%B7%AF%E5%BE%84%E5%88%86%E6%9E%90%EF%BC%9A%E7%94%A8%E6%88%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E8%B7%AF%E5%BE%84%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90_files/0gehvfsbngis2b86jte075su3h.png" width="1057"></p>
+<h3 class="topic">
+<a name="26ug9m6kearka7sgcj2iar16mk">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;启发</a>
+</h3>
+<h3 class="topic">
+<a name="1mef44hg6506fdn56qe6lrj8og">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; 基于80%用户进来选了&ldquo;离我最近&rdquo;，可否把&ldquo;智能推荐&rdquo;改为&ldquo;综合推荐&rdquo;？&#13;
+&middot; 其次，用户逛了详情页又回退上一页，是否可增加&ldquo;相关推荐&rdquo;来缩短用户下单路径。</a>
+</h3>
+<h3 class="topic">
+<a name="6m82j6cu87i2crm3tdo3c0iijc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; &ldquo;优惠团购&rdquo;后有80%用户进行&ldquo;搜索&rdquo;，是否当前页面推荐算法不够准确，需优化！</a>
+</h3>
+<h3 class="topic">
+<a name="292gn4d25gmgenf6bkrj7jdkou">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; &ldquo;外卖&rdquo;是否可替换掉？因外部模块也有&ldquo;外卖&rdquo;按钮</a>
+</h3>
+<h3 class="topic">
+<a name="1bpne05jt6a0j4f6ckjb9dnsdi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot; &ldquo;秒杀&rdquo;可否也采取增加&ldquo;相关推荐&rdquo;？</a>
+</h3>
+<h2 class="topic">
+<a name="1eeotum256hd1vfj4kg5abpm46">3. 路径分析思考</a>
+</h2>
+<h3 class="topic">
+<a name="75bha622utgsndklkmdffup2kn">&nbsp;3.1. 要想精细化运营，最好在路径分析的时候进行 维度拆解！</a>
+</h3>
+<h3 class="topic">
+<a name="7odcqafa6in6ja38snof0ad2ie">&nbsp;3.2. 对于不连续路径的用户该如何分析？？暂无参考答案，请自我探索！</a>
+</h3>
+<h3 class="topic">
+<a name="7bpmeq0o3hv84e5t3n0ce4dmlu">&nbsp;3.3. PC端的路径分析同App端差异在哪儿？有无案例参考？</a>
+</h3>
+<h3 class="topic">
+<a name="1ackj5upeonttrm5stgsc9uph4">&nbsp;3.4. 一定要多多体验自己的产品（比如App）对各个路径都要非常熟悉才能做好路径分析！！！&#13;
+分析师就是最大的产品经理，要站全局角度去看产品！</a>
+</h3>
+</body>
+</html>
