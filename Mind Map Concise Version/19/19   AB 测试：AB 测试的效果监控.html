@@ -1,0 +1,154 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>19 | AB 测试：AB 测试的效果监控</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="5on35d7l0prt3fmrcmppgf8pjl">19 | AB 测试：AB 测试的效果监控</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/images/19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7.jpg"></div>
+<h2 class="topic">
+<a name="36s7p7d5hpmc2on2qhl5j4d4la">1. A/B 测试介绍</a>
+</h2>
+<h3 class="topic">
+<a name="0036o7mlj04qnbrofpkjebi058">&nbsp;1.1. A/B测试概念</a>
+</h3>
+<h3 class="topic">
+<a name="00drv2gbsnfo04g5huum5i9kpn">&nbsp;&nbsp;&middot; 概念：</a>
+</h3>
+<h3 class="topic">
+<a name="2gp4jjb892bg77ns63v90a1vkt">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<p class="topicImage">
+<img height="237" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/4u2v0047akta98hjlimbr2pb3o.png" width="1166"></p>
+<h3 class="topic">
+<a name="6j93oqg48bb0hbetqb4p6of9vp">&nbsp;&nbsp;&middot; 关键点：</a>
+</h3>
+<h3 class="topic">
+<a name="3akagapartbgrpneohvcoims9c">&nbsp;&nbsp;&nbsp;&middot; 组成成分相同的访客</a>
+</h3>
+<h3 class="topic">
+<a name="2pjldh64bbjbu8ft7sirlk8e9e">&nbsp;&nbsp;&nbsp;&middot; 同一时间维度</a>
+</h3>
+<h3 class="topic">
+<a name="5l0fgrprgaq14jfkn4op1psi3k">&nbsp;&nbsp;&nbsp;&middot; 用户体验数据和业务数据</a>
+</h3>
+<h3 class="topic">
+<a name="50ov789740866l1nqrddpami9a">&nbsp;&nbsp;&middot; 流程：</a>
+</h3>
+<h3 class="topic">
+<a name="0q2bcu25tji3222ppsnfi8b7pv">&nbsp;&nbsp;&nbsp;&middot; 根据数据分析得到某建议项</a>
+</h3>
+<h3 class="topic">
+<a name="5r9vnsvdmqmf7676d68h4b3rkt">&nbsp;&nbsp;&nbsp;&middot; 落地前一般要通过 A/B 测试</a>
+</h3>
+<h3 class="topic">
+<a name="5uk29o28odbb2k4qhdp3arh31u">&nbsp;&nbsp;&nbsp;&middot; 根据落地项，设计后丢到A/B测试平台跑数据</a>
+</h3>
+<h3 class="topic">
+<a name="067meodhiqh78mjam4niqnakq0">&nbsp;&nbsp;&nbsp;&middot; 自动采集数据</a>
+</h3>
+<h3 class="topic">
+<a name="1q9m87d6ssrmvhioilu1qb1hqp">&nbsp;&nbsp;&nbsp;&middot; 跟进测试效果，95%显著性一段时间，就结束测试</a>
+</h3>
+<h3 class="topic">
+<a name="1j7iamigqcpjjtkqg3rokgqdlm">&nbsp;1.2. 常见的两种A/B测试类型</a>
+</h3>
+<h3 class="topic">
+<a name="5s1eno3f8qgsad9nhnd09997qr">&nbsp;&nbsp;&middot; UI 界面型</a>
+</h3>
+<h3 class="topic">
+<a name="66rc2d23j151qndch854gs9cet">&nbsp;&nbsp;&nbsp;（比如墨迹天气这个小人就是）</a>
+</h3>
+<p class="topicImage">
+<img height="618" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/0qc1h67fcf3jv4goopusotpgcs.png" width="339"></p>
+<h3 class="topic">
+<a name="2bm3n30t99s2hp6481oca94psv">&nbsp;&nbsp;&middot; 算法策略型</a>
+</h3>
+<h3 class="topic">
+<a name="2s46kl3aen6dg12b0vu77lad6e">&nbsp;&nbsp;&nbsp;（比如小红书这个首屏做推荐算法）</a>
+</h3>
+<p class="topicImage">
+<img height="695" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/1lt84c3fpmh33ddkb963jdpe9r.png" width="388"></p>
+<h3 class="topic">
+<a name="6q2b7i8er777ia9tk0fkh1491e">&nbsp;1.3. A/B测试在实际工作中会遇到的问题</a>
+</h3>
+<h3 class="topic">
+<a name="70kalj270di3mnru5ur6abq6pk">&nbsp;&nbsp;&middot; 测试不在同一时间维度！</a>
+</h3>
+<h3 class="topic">
+<a name="0rodh8t1b1p1t7gui43jcihnb0">&nbsp;&nbsp;&middot; 不要等数据表现好了才做A/B测试，应该一开始上线某功能就做。</a>
+</h3>
+<h2 class="topic">
+<a name="4soqqif81q8psth636caf46nk8">2. A/B 测试注意事项</a>
+</h2>
+<h3 class="topic">
+<a name="6q9ofj7fpd4vb5lim3ldj0o508">&nbsp;2.1. A/B 两个组是否真的相同</a>
+</h3>
+<h3 class="topic">
+<a name="1evuo97gpfqajcq0llnm5437rr">&nbsp;2.2. 策略是否生效</a>
+</h3>
+<h3 class="topic">
+<a name="44eda9dgan6oqehqgluu0pt90q">&nbsp;2.3. A/B 测试评估指标体系</a>
+</h3>
+<h3 class="topic">
+<a name="2fdqca1ol7c2q5egdoq5gij5am">&nbsp;&nbsp;（类似这样的格式）</a>
+</h3>
+<p class="topicImage">
+<img height="171" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/5te57452g05er1dec38uil8rqo.png" width="868"></p>
+<h3 class="topic">
+<a name="1c7365ret18it05qc4jsofjiff">&nbsp;2.4. 多观察几天数据（一般3天后才可用）</a>
+</h3>
+<h3 class="topic">
+<a name="74rntmttf71q6n2dmug64jf5s2">&nbsp;&nbsp;（类似上图这样）</a>
+</h3>
+<p class="topicImage">
+<img height="381" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/39hin4k76ffshsf8nin34j07a0.png" width="740"></p>
+<h3 class="topic">
+<a name="0dd08tp5h9rqtdiv2jijvvvt75">&nbsp;2.5. A/B 测试的存档规划</a>
+</h3>
+<h3 class="topic">
+<a name="56214b45vl11r5ab4fs09krqui">&nbsp;&nbsp;（建议采用 5W1H 方法来管理A/B 测试）</a>
+</h3>
+<p class="topicImage">
+<img height="188" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/1gc5jp52t2d7u87p1cnqn1urk4.png" width="929"></p>
+<h2 class="topic">
+<a name="04mfto8e3bdvk9if6u5vtj5tnl">3. A/B 测试案例</a>
+</h2>
+<h3 class="topic">
+<a name="28k39ke8qkh104que15mo43ise">&nbsp;（Netflix 海报案例）</a>
+</h3>
+<p class="topicImage">
+<img height="437" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/59v67n5cs33jsqoms6ut7otslg.png" width="853"></p>
+<h3 class="topic">
+<a name="27sd83f56d6r7il28g9ak2mhu3">&nbsp;（滴滴用户头像案例）</a>
+</h3>
+<p class="topicImage">
+<img height="734" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/7h9jht3nkoptgfjo2fcehsjbti.png" width="413"></p>
+<h3 class="topic">
+<a name="4i758pstc4bnfpsklo84u0knmb">&nbsp;（今日头像广告位案例）</a>
+</h3>
+<p class="topicImage">
+<img height="663" src="19   AB %E6%B5%8B%E8%AF%95%EF%BC%9AAB %E6%B5%8B%E8%AF%95%E7%9A%84%E6%95%88%E6%9E%9C%E7%9B%91%E6%8E%A7_files/7ah7l5dcjdk5as02a8076q4fov.png" width="363"></p>
+<h3 class="topic">
+<a name="407o1vigltr5g440t4cu9sr2d2">&nbsp;3.1. 案例思考</a>
+</h3>
+<h3 class="topic">
+<a name="6mcjvl2jgusesp8nu0n1lcvite">&nbsp;&nbsp;&middot; A/B 测试会涉及三方：设计师、产品经理、数据分析师</a>
+</h3>
+<h3 class="topic">
+<a name="6u4cabnn03hel4c1gbfvdpavdg">&nbsp;&nbsp;&middot; A/B 测试的效果往往都是略好，所以要持续迭代</a>
+</h3>
+<h3 class="topic">
+<a name="5djek48t50nbgdqrj4i9cb3isu">&nbsp;&nbsp;&middot; A/B测试效果太好要小心！！！可能是实验有问题</a>
+</h3>
+<h2 class="topic">
+<a name="3ehisai1hkcspel8kru72ivci1">&middot; 做 A/B 测试的时候，一定是先灰度（小版本）测试，再放量&#13;
+&middot; 整体节奏要按照灰度、5%、10%、20%、50%、100% 来控制</a>
+</h2>
+</body>
+</html>
